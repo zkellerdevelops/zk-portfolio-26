@@ -1,0 +1,70 @@
+{
+  "slug": "amazon-climate-pledge-friendly",
+  "title": "Amazon Climate Pledge Friendly",
+  "role": "Lead UX Designer - 2/2023 - 3/2024",
+  "overview": "Climate Pledge Friendly is Amazon's flagship sustainability shopping program. We've partnered with over 50 third party trusted sustainability certifying organizations to provide customers with tangible and fact-based reasons why a product is able to be considered a more sustainable option.",
+  "goal": "The Climate Pledge Friendly CX had remained largely unchanged since it's launch in 2020, and while it was receiving good traction with our customers, we were facing key headwinds as a program related to customer comprehension, localization challenges across our international marketplaces, and growing regulatory concerns in the European Union. Based on these factors, we took it upon ourselves to improve the CPF customer experience and set up a scaleable system that provides more clarity and transparency for our customers.",
+  "protected": true,
+  "blocks": [
+    {
+      "type": "feature_img",
+      "desktop": "673e78f67b2642c89dbd70be_CPF_featured_image.png",
+      "mobile": "673ea13c8c07549a8c6e4f41_CPF_featured_image_mobile.png"
+    },
+    {
+      "type": "desc",
+      "heading": "Setting the stage",
+      "body": "The existing customer experience was functional, but was a bit convoluted. Our suatainability claim substantiation was centered around the certifications that a product had, not the reasons why we considered it more sustainable. We heard time and again form customers that they simply wanted an \"easy mode\". They wanted to know tangible and easy to understand reasons why these claims were made.<br><br>The other issue was localization in our international marketplaces. the term \"Climate Pledge Friendly\" does not translate well in many languages, including French, German, and Spanish. We knew we needed a way to decouple our CX from the program name, and update our badging to sue language that would be easily recognizable in all marketplaces across the world.<br><br>We also faced increasing regulatory risks from the EU regarding how sustainability claims are presented. This is an effort to limit \"greenwashing\", to which end the EU had already imposed penalities on some of our competitors. Transparency was key here."
+    },
+    {
+      "type": "imgs",
+      "desktop": [
+        "673e7fdf59fb9b3c5ddf8a16_CPF_existing_search.png",
+        "673e8175531e4705551e185c_CPF_existing_DP.png"
+      ],
+      "mobile": [
+        "673e9f895182b653d950ff26_CPF_existing_search_mobile.png",
+        "673e9fab400670f5b952f96f_CPF_existing_search_mobile-1.png"
+      ]
+    },
+    {
+      "type": "desc",
+      "heading": "Badging framework clarity",
+      "body": "Knowing that our customers were more interested in the \"why\" a product was considered more sustainable, and not the \"how\", we set about to rethink our badging framework. International localization and clear communication were key requirements. We tested multiple strings for our badges, and ran risk assessments with Amazon legal to narrow our options down to several options. We then tested these badge strings with customers in the US and EU, looking for increases in comprehension, glance views, as well as overall conversions.<br><br>Another aspect we considered was the existing CPF logo, the hourglass with wings mark. This was consistently creating confusion amongst our customers, and we knew we needed to address it. We worked with Rio, the Amazon Shopping Design system team to create a leaf icon that meets the standards of the design system and provides a clearer visual cue that an item has sustainability claims. This allowed us to lean into a very recognizable icon to denote these sustainability claims, while allowing us to de-emphasize the CPF brand without walking away from it completely."
+    },
+    {
+      "type": "imgs",
+      "desktop": [
+        "673e93392dfff7a3da9e6693_CPF_badges.png"
+      ],
+      "mobile": [
+        "673e9fc10997ba3ac75ae26a_CPF_badges_mobile.png"
+      ]
+    },
+    {
+      "type": "desc",
+      "heading": "Experiment results",
+      "body": "In the end, our customers preferred \"X sustainability features\". \"X\" denoting the number of sustainability features associated with a product's claims. CPF provides 14 different features, with examples such as \"Organic content\", \"Worker well-being\", and \"Animal welfare\". These features denote the reasons \"why\" a product is considered more sustainable, and are in line with the feedback we receieved from our customers about transparency and clarity in our sustainability claims."
+    },
+    {
+      "type": "imgs",
+      "desktop": [
+        "673e952b0353f48a684fb0d8_CPF_new_search.png",
+        "673e9f19a86fc12de8867c83_CPF_new_DP.png"
+      ],
+      "mobile": [
+        "673ea0631055e17f8753c372_CPF_new_search_mobile.png",
+        "673ea06396c32a702e356391_CPF_new_DP_mobile.png"
+      ]
+    },
+    {
+      "type": "desc",
+      "heading": "KPIs",
+      "body": "<strong class=\"bold-text\">Trust in the badge reached an all-time high on Search, reversing a 3 year negative trend </strong>Customer trust perception increased by +604bps on Search (44.1%) and +189bps on Detail Page (36.1%), reversing a decline that started in 2021 (see <em>Figure 1</em>). The results confirmed our hypothesis that the new badge would build long-term customer trust in the program, in line with our vision to make Amazon earth’s #1 trusted destination for sustainable shopping. <br><br><strong class=\"bold-text\">The new badge is easier to understand and increases certification credibility </strong>Customers were -400bps less likely to select ‘I don’t understand how the sustainability features badge is calculated / assigned’ (from 14.7% to 11.7%), and -300bps less likely to select ‘I have concerns about the credibility of the certifications in the program’, both of which were previously our top trust <em>barriers</em>. <br><br><strong class=\"bold-text\">Customer confidence reached a three-year high, matching levels from program launch </strong>Customers selecting ‘This feature is not important to my confidence at all’ decreased -554bps (from 20.1% to 14.6%), reversing a three-year trend and returning to a level not seen since program launch (14.1%)."
+    }
+  ],
+  "order": 2,
+  "card_title": "Amazon Climate Pledge Friendly",
+  "thumbnail": "673dfd763b1f68873de589b9_CPF_thumbnail.png",
+  "has_page": true
+}
