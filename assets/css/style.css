@@ -1,0 +1,274 @@
+/* Zach Keller — portfolio
+   Hand-rebuilt from the original Webflow site. Design tokens preserved:
+   fonts Montserrat (body) + Lato (display), dark pill buttons, light footer. */
+
+:root {
+  --text: #1a1b1f;
+  --bg: #fff;
+  --footer-bg: #f8f8f8;
+  --button-bg: #1a1a1a;
+  --container: 1413px;
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  color: var(--text);
+  background-color: var(--bg);
+  font-family: Montserrat, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+img { display: block; max-width: 100%; }
+
+a { color: var(--text); text-decoration: underline; transition: opacity .2s; }
+a:hover { opacity: .7; }
+
+/* ---------- layout ---------- */
+.container {
+  width: 100%;
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.section {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* ---------- nav ---------- */
+.navigation {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  align-self: flex-start;
+  padding: 30px 50px;
+  background: transparent;
+}
+.logo-image { width: 75px; }
+.logo-link { line-height: 0; }
+
+/* ---------- hero ---------- */
+.intro-wrap {
+  margin: 60px 0 140px;
+  text-align: left;
+}
+.name-text {
+  font-family: Lato, sans-serif;
+  font-size: 20px;
+  line-height: 34px;
+}
+.paragraph-light {
+  opacity: .6;
+  font-family: Lato, sans-serif;
+}
+.hello {
+  padding-top: 20px;
+  font-family: Lato, sans-serif;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 74px;
+}
+.tagline {
+  margin: 0;
+  padding-bottom: 20px;
+  font-family: Lato, sans-serif;
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 64px;
+}
+.social-row { display: flex; }
+.link-box { padding-right: 16px; display: block; line-height: 0; }
+.link-box img { width: 28px; height: 28px; }
+
+/* ---------- project grid (home) ---------- */
+.project-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 140px;
+}
+.project-card {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+.project-card img { width: 100%; border-radius: 4px; }
+.project-card.is-disabled { cursor: default; opacity: .55; }
+.project-title {
+  padding-top: 10px;
+  font-family: Lato, sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+/* ---------- case study ---------- */
+.heading-jumbo {
+  margin: 10px 0;
+  padding-bottom: 20px;
+  font-family: Lato, sans-serif;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 74px;
+  letter-spacing: -1px;
+}
+.project-overview-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  margin: 40px 0;
+}
+.project-description-grid {
+  display: grid;
+  grid-template-columns: 2fr 2.5fr;
+  gap: 30px;
+  margin: 120px 0;
+}
+.position-name-text {
+  margin-bottom: 10px;
+  font-family: Lato, sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 34px;
+  text-align: left;
+}
+.detail-header-image {
+  width: 100%;
+  margin: 40px auto 0;
+}
+.detail-header-image.top-spacing { margin-top: 40px; }
+
+/* full-width image sections */
+.feature-img, .project-img { padding: 0 20px; }
+.feature-img .container, .project-img .container { max-width: var(--container); padding: 0 20px; }
+.img-mobile { display: none; }
+
+/* launch button block */
+.launch-block { margin-top: 40px; }
+.button-2 {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 9px 32px;
+  color: #fff;
+  background-color: var(--button-bg);
+  border-radius: 50px;
+  font-family: Lato, sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+}
+.button-2:hover { opacity: .85; }
+.launch-centered { width: 100%; text-align: center; margin: 40px 0; }
+.bold-text { display: block; padding-bottom: 10px; }
+
+/* ---------- contact ---------- */
+.email-section {
+  width: 70%;
+  margin: 140px auto 200px;
+  text-align: center;
+}
+.email-section h3 {
+  font-family: Lato, sans-serif;
+  font-weight: 700;
+}
+.email-section p { font-family: Lato, sans-serif; }
+.email-link {
+  display: inline-block;
+  margin: 15px 0;
+  font-family: Lato, sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 88px;
+  text-decoration: none;
+}
+
+/* ---------- footer ---------- */
+.footer-wrap {
+  width: 100%;
+  margin-top: auto;
+  padding: 40px 50px;
+  background-color: var(--footer-bg);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+}
+.footer-logo { width: 45px; margin-right: 8px; }
+.paragraph-tiny {
+  font-family: Lato, sans-serif;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+/* ---------- password gate ---------- */
+.gate {
+  width: 100%;
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  text-align: center;
+  padding: 40px;
+}
+.gate h1 { font-family: Lato, sans-serif; }
+.gate form { display: flex; gap: 8px; }
+.gate input[type="password"] {
+  padding: 10px 16px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+.gate button {
+  padding: 10px 24px;
+  font-family: Lato, sans-serif;
+  color: #fff;
+  background: var(--button-bg);
+  border: 0;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.gate .error { color: #b00; min-height: 20px; }
+[data-protected] { display: none; }
+body.unlocked [data-protected] { display: flex; }
+body.unlocked .gate { display: none; }
+
+/* ---------- responsive ---------- */
+@media (max-width: 991px) {
+  .navigation { padding: 25px 30px; }
+  .heading-jumbo { font-size: 56px; line-height: 70px; }
+}
+@media (max-width: 767px) {
+  .container { padding: 0 16px; }
+  .navigation { padding: 20px; }
+  .intro-wrap { margin: 20px 0 60px; }
+  .hello { font-size: 40px; line-height: 40px; }
+  .tagline { font-size: 32px; line-height: 34px; }
+  .project-grid { grid-template-columns: 1fr; gap: 8px; margin-bottom: 60px; }
+  .heading-jumbo { font-size: 40px; line-height: 42px; text-align: left; }
+  .project-overview-grid { grid-template-columns: 1fr; gap: 28px; margin: 20px 0 0; }
+  .project-description-grid { grid-template-columns: 1fr; gap: 28px; margin: 40px 0; }
+  .email-section { width: 80%; max-width: 470px; margin: 120px auto; }
+  .email-link { font-size: 24px; line-height: 46px; }
+  .footer-wrap { flex-direction: column; align-items: flex-start; gap: 12px; padding-left: 16px; }
+  /* swap desktop/mobile images */
+  .img-desktop { display: none; }
+  .img-mobile { display: block; }
+}
