@@ -247,7 +247,7 @@ a:hover { opacity: .7; }
 }
 .gate .error { color: #b00; min-height: 20px; }
 [data-protected] { display: none; }
-body.unlocked [data-protected] { display: flex; }
+body.unlocked [data-protected] { display: block; }
 body.unlocked .gate { display: none; }
 
 /* ---------- responsive ---------- */
