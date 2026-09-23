@@ -80,12 +80,37 @@ python3 -m http.server 8000
 # open http://localhost:8000
 ```
 
-## Deploy to GitHub Pages
+## Editing in a browser (Pages CMS)
 
-1. Push this folder to a repo (e.g. `zkellerdevelops.github.io` for a root user site, or any
-   repo with Pages enabled).
-2. In **Settings → Pages**, set the source to the branch and `/ (root)` folder.
-3. For a custom domain (`zachkeller.net`): add a `CNAME` file containing `www.zachkeller.net`
-   and point your DNS at GitHub Pages.
+[Pages CMS](https://pagescms.org) gives a clean web UI for editing content — no code,
+no local setup. It's configured by [`.pages.yml`](.pages.yml) at the repo root.
 
-Paths are relative, so the site also works from a project subpath (`user.github.io/repo/`).
+**One-time setup:**
+1. Go to [app.pagescms.org](https://app.pagescms.org) and sign in with GitHub.
+2. Authorize it for the `zkellerdevelops/zk-portfolio-26` repo.
+3. It reads `.pages.yml` and shows **Site settings** + a **Projects** collection.
+
+**Editing:** change fields in the UI and save. Pages CMS commits to `content/*.json`,
+which triggers the GitHub Action below to rebuild and redeploy — changes go live in a
+minute or two. Images upload straight into `assets/img/`.
+
+The `blocks` field is a drag-orderable list where each item is one of: **Image(s)**,
+**Text section**, or **Centered launch button** — the same structure `build.py` renders.
+
+## Deployment (GitHub Actions)
+
+[`.github/workflows/deploy.yml`](.github/workflows/deploy.yml) runs `build.py` and deploys
+to GitHub Pages on every push to `main` (including Pages CMS commits).
+
+**One-time setup:** in **Settings → Pages**, set **Source: GitHub Actions**.
+
+This repo isn't named `zkellerdevelops.github.io`, so it deploys to
+`zkellerdevelops.github.io/zk-portfolio-26/`. Paths are relative, so the subpath works.
+
+**Custom domain (`zachkeller.net`):** add a `CNAME` file at the repo root containing
+`www.zachkeller.net`, set it under Settings → Pages → Custom domain, and point your DNS
+at GitHub Pages.
+
+> Note: the generated HTML is also committed for portability (any static host works with
+> no build). After editing content locally, run `python3 build.py` before committing so the
+> committed HTML stays in sync. The live site is always rebuilt by the Action regardless.

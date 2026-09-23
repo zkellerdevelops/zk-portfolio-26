@@ -1,0 +1,169 @@
+# Pages CMS configuration — https://pagescms.org
+# Connect this repo at https://app.pagescms.org and edit content in a browser UI.
+# Saving commits to content/*.json; run `python3 build.py` (or a CI action) to
+# regenerate the HTML.
+
+media:
+  input: assets/img          # where image files live in the repo
+  output: assets/img         # path written into content (matches build.py)
+  extensions: [png, jpg, jpeg, svg, webp, gif]
+
+content:
+  - name: site
+    label: Site settings
+    type: file
+    path: content/site.json
+    fields:
+      - name: name
+        label: Name
+        type: string
+      - name: role
+        label: Role / subtitle
+        type: string
+      - name: hello
+        label: Greeting
+        type: string
+      - name: tagline
+        label: Tagline (H1)
+        type: text
+      - name: social
+        label: Social links
+        type: object
+        list:
+          collapsible:
+            summary: "{name}"
+        fields:
+          - name: name
+            type: string
+          - name: url
+            type: string
+          - name: icon
+            type: image
+      - name: contact
+        label: Contact block
+        type: object
+        fields:
+          - name: heading
+            type: string
+          - name: blurb
+            type: string
+          - name: email
+            type: string
+      - name: footer
+        label: Footer text
+        type: string
+      - name: logo
+        label: Logo
+        type: image
+      - name: favicon
+        type: image
+      - name: apple_icon
+        label: Apple touch icon
+        type: image
+      - name: meta
+        label: SEO / social meta
+        type: object
+        fields:
+          - name: title
+            label: Page title
+            type: string
+          - name: description
+            type: text
+          - name: og_title
+            label: OG title
+            type: string
+          - name: og_image
+            label: OG image
+            type: image
+
+  - name: projects
+    label: Projects
+    type: collection
+    path: content/projects
+    filename: "{fields.slug}.json"
+    view:
+      primary: card_title
+      fields: [card_title, order, has_page, protected]
+      sort: [order, card_title]
+      default:
+        sort: order
+        order: asc
+    fields:
+      - name: slug
+        label: Slug (URL + filename)
+        type: string
+        required: true
+        pattern: "^[a-z0-9-]+$"
+      - name: order
+        label: Grid order
+        type: number
+      - name: card_title
+        label: Card title (home grid)
+        type: string
+      - name: thumbnail
+        label: Thumbnail (home grid)
+        type: image
+      - name: has_page
+        label: Has a case-study page?
+        type: boolean
+      - name: protected
+        label: Password protected?
+        type: boolean
+      - name: title
+        label: Page title
+        type: string
+      - name: role
+        label: Role / dates
+        type: string
+      - name: overview
+        label: Project Overview
+        type: text
+      - name: goal
+        label: Project Goal
+        type: text
+      - name: overview_launch
+        label: Header launch button (optional)
+        type: object
+        fields:
+          - name: label
+            type: string
+          - name: url
+            type: string
+      - name: blocks
+        label: Content blocks
+        type: block
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{type}"
+        blockKey: type
+        blocks:
+          - name: images
+            label: Image(s)
+            fields:
+              - name: desktop
+                label: Desktop image(s)
+                type: image
+                list: true
+              - name: mobile
+                label: Mobile image(s)
+                type: image
+                list: true
+              - name: top_spacing
+                label: Extra spacing between images
+                type: boolean
+          - name: desc
+            label: Text section
+            fields:
+              - name: heading
+                type: string
+              - name: body
+                label: Body (supports inline HTML — <br>, <strong>, <em>)
+                type: text
+          - name: launch_center
+            label: Centered launch button
+            fields:
+              - name: label
+                type: string
+              - name: url
+                type: string

@@ -7,9 +7,14 @@
   "protected": false,
   "blocks": [
     {
-      "type": "feature_img",
-      "desktop": "635156bc06552af349533318_LP_search_featured_desktop.png",
-      "mobile": "635156bc485d397d2afbf7d9_LP_search_featured_mobile.png"
+      "type": "images",
+      "desktop": [
+        "assets/img/635156bc06552af349533318_LP_search_featured_desktop.png"
+      ],
+      "mobile": [
+        "assets/img/635156bc485d397d2afbf7d9_LP_search_featured_mobile.png"
+      ],
+      "top_spacing": false
     },
     {
       "type": "desc",
@@ -17,13 +22,14 @@
       "body": "Imagine searching for \"London\" when planning your next vacation, and after waiting 10-20 seconds for the query to happen, the results displayed are for restaurants and nightclubs named \"London\" in Kyiv or Berlin. This was the disjointed an unhelpful state of Lonely Planet's search feature.<br><br>I knew that in order to successfully rebuild the search feature, it would be a two-fold effort. Not only would I have to nail down the CX in a way that was quick and intuitive for our customers, but I'd also have to work closely with engineering to make sure our page speed was lightning fast, and that the results were ranked according to relevance."
     },
     {
-      "type": "imgs",
+      "type": "images",
       "desktop": [
-        "63506d91547a1803ce25efcd_LP_Search_existing_desktop.png"
+        "assets/img/63506d91547a1803ce25efcd_LP_Search_existing_desktop.png"
       ],
       "mobile": [
-        "63506d916ae731de985c6f80_LP_Search_existing_mobile.png"
-      ]
+        "assets/img/63506d916ae731de985c6f80_LP_Search_existing_mobile.png"
+      ],
+      "top_spacing": false
     },
     {
       "type": "desc",
@@ -31,13 +37,14 @@
       "body": "I began by going through several iterations of a new search CX for desktop and mobile. Several of these iterations were disproven in user testing sessions, and I had to go back to the drawing board more than once. Eventually I landed on a design and flow that resonated with our tests participants. The key was taking into account a way to easily funnel customers into our multiple areas of content (destinations, articles, points of interest, and experiences). <br><br>Once I nailed the UI and look and feel, it was time to figure out how to provide quick queries and relevant rankings with live code. Working with our engineering team, we identified a service called Swiftype which would be able to not only cache our massive amount of urls and meta tag data, but also allow algorithmic as well as manual rankings of the results. This allowed us to ensure that when a customer searches for \"London\", they are actually getting results for the city in the UK, and not a nightclub in Kyiv."
     },
     {
-      "type": "imgs",
+      "type": "images",
       "desktop": [
-        "63506d90d76cc5a1e981f149_LP_Search_flow_desktop.png"
+        "assets/img/63506d90d76cc5a1e981f149_LP_Search_flow_desktop.png"
       ],
       "mobile": [
-        "63506d90d76cc5cde181f14a_LP_Search_flow_mobile.png"
-      ]
+        "assets/img/63506d90d76cc5cde181f14a_LP_Search_flow_mobile.png"
+      ],
+      "top_spacing": false
     },
     {
       "type": "desc",
@@ -45,20 +52,20 @@
       "body": "After the implementation of the new search CX, we saw dramatic improvements across the board. Our page speed ranking for the all results view increased from 42 to 73. Our pre-search bounce rate improved from 45% to 32%. The post-search bounce rate improved from 70% to 10%, which is incredible. We also saw massive improvements in our relevancy rankings for our top 100 queries.<br><br>All in all, this redesign was a huge success. We had a joke internally at Lonely Planet before this project that the best way to search on Lonely Planet was to open a new Google search tab in your browser. Happily, this no longer was the case."
     },
     {
-      "type": "imgs",
+      "type": "images",
       "desktop": [
-        "6350aaaf7b016e67189a4278_LP_search_final_1_desktop.png",
-        "6350aaae7963e0154da9d210_LP_search_final_2_desktop.png"
+        "assets/img/6350aaaf7b016e67189a4278_LP_search_final_1_desktop.png",
+        "assets/img/6350aaae7963e0154da9d210_LP_search_final_2_desktop.png"
       ],
       "mobile": [
-        "6350aaae5680c60af726d0ea_LP_search_final_1_mobile.png",
-        "6350aaaee478f8904ed33e83_LP_search_final_2_mobile.png"
+        "assets/img/6350aaae5680c60af726d0ea_LP_search_final_1_mobile.png",
+        "assets/img/6350aaaee478f8904ed33e83_LP_search_final_2_mobile.png"
       ],
-      "top_spacing_index": 1
+      "top_spacing": true
     }
   ],
   "order": 5,
   "card_title": "Lonely Planet Search",
-  "thumbnail": "673dfd7685ddeffafcf8e9f0_LP_thumbnail_1.png",
+  "thumbnail": "assets/img/673dfd7685ddeffafcf8e9f0_LP_thumbnail_1.png",
   "has_page": true
 }

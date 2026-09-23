@@ -3,7 +3,7 @@
     "title": "Zach Keller | UX Designer | Portfolio",
     "description": "I'm a User Experience Designer with 20 years experience in the design field.",
     "og_title": "Zach Keller - UX Designer",
-    "og_image": "6744ede03296f13731d86f88_OG-image.png"
+    "og_image": "assets/img/6744ede03296f13731d86f88_OG-image.png"
   },
   "name": "Zach Keller",
   "role": "Senior UX Designer - Amazon, North American Stores Design",
@@ -13,22 +13,22 @@
     {
       "name": "LinkedIn",
       "url": "https://www.linkedin.com/in/zkellerdevelops/",
-      "icon": "634dafb5eedf7fe0991421c8_linkedin.svg"
+      "icon": "assets/img/634dafb5eedf7fe0991421c8_linkedin.svg"
     },
     {
       "name": "GitHub",
       "url": "https://github.com/zkellerdevelops",
-      "icon": "634dafb5bea80c477bd34772_github.svg"
+      "icon": "assets/img/634dafb5bea80c477bd34772_github.svg"
     },
     {
       "name": "Instagram",
       "url": "https://www.instagram.com/eloist/",
-      "icon": "634dafb526caecd36ff33cf4_instagram.svg"
+      "icon": "assets/img/634dafb526caecd36ff33cf4_instagram.svg"
     },
     {
       "name": "SoundCloud",
       "url": "https://soundcloud.com/zach-keller-5",
-      "icon": "673dfc9d82053804410d40a0_Soundcloud.svg"
+      "icon": "assets/img/673dfc9d82053804410d40a0_Soundcloud.svg"
     }
   ],
   "contact": {
@@ -37,7 +37,7 @@
     "email": "zkellerdevelops@gmail.com"
   },
   "footer": "Zach Keller - 2024",
-  "logo": "634d82ab56a6ac2650821b72_zlk-logo.svg",
-  "favicon": "636a7064fd2b2c05be7f113c_favicon-32x32.png",
-  "apple_icon": "636a70c839b40cb05adcfed5_webclip.png"
+  "logo": "assets/img/634d82ab56a6ac2650821b72_zlk-logo.svg",
+  "favicon": "assets/img/636a7064fd2b2c05be7f113c_favicon-32x32.png",
+  "apple_icon": "assets/img/636a70c839b40cb05adcfed5_webclip.png"
 }
