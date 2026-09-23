@@ -65,18 +65,6 @@ def footer(link_href, prefix):
 """
 
 
-def contact_section():
-    c = SITE["contact"]
-    return f"""      <section class="section"><div class="container">
-        <div class="email-section">
-          <h3>{escape(c['heading'])}</h3>
-          <p>{escape(c['blurb'])}</p>
-          <a class="email-link" href="mailto:{c['email']}?subject=You've%20got%20mail!">{escape(c['email'])}</a>
-        </div>
-      </div></section>
-"""
-
-
 # ---------- home ----------
 def build_home(projects):
     px = HOME_PREFIX
@@ -218,7 +206,7 @@ def build_project(p):
         </div>
       </div></section>
       {blocks_html}
-{contact_section()}    </div>
+    </div>
   </main>
 
 {footer("../../", px)}"""
